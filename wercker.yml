@@ -1,0 +1,28 @@
+build:
+  box:
+    id: golang
+    tag: 1.9
+  
+  steps:
+    - setup-go-workspace:
+        package-dir: github.com/infiniteprimates/smoke
+
+    - script:
+        name: install tools
+        code: |
+          go get -u github.com/golang/dep/cmd/dep
+
+    - script:
+        name: install dependencies
+        code: |
+          dep ensure
+
+    - script:
+        name: go test
+        code: |
+          go test ./...
+
+    - script:
+        name: go build
+        code: |
+          go build
