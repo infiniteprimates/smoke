@@ -8,7 +8,7 @@ import (
 )
 
 var serverCmd = &cobra.Command{
-	Use: "server",
+	Use:   "server",
 	Short: "Start the Smoke service",
 	Long: `
 Start the smoke service

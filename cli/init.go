@@ -8,7 +8,7 @@ import (
 )
 
 var initCmd = &cobra.Command{
-	Use: "init",
+	Use:   "init",
 	Short: "Initialize Smoke db and configuration",
 	Long: `
 Init will create the initial configuration and service database. It will also
