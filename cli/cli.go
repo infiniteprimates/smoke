@@ -29,7 +29,7 @@ func Main() {
 
 type cliError struct {
 	exitCode int
-	cause error
+	cause    error
 }
 
 func (e *cliError) Error() string {
@@ -37,9 +37,9 @@ func (e *cliError) Error() string {
 }
 
 var mainCmd = &cobra.Command{
-	Use: "smoke [command] (flags)",
-	Short: "Smoke CLI",
-	Long: "Smoke CLI",
+	Use:          "smoke [command] (flags)",
+	Short:        "Smoke CLI",
+	Long:         "Smoke CLI",
 	SilenceUsage: true,
 }
 
