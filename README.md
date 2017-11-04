@@ -20,13 +20,13 @@ You will need the following software in order to build Smoke.
 
 To build the smoke binary:
 
-0. Clone this repository to $GOPATH/src/github.com/infiniteprimates/smoke
-0. Change directories into $GOPATH/src/github.com/infiniteprimates/smoke
-0. Install go dependencies using the dep tool. Run 'dep ensure'.
-0. Build the smoke binary. Run 'go build'.
+1. Clone this repository to $GOPATH/src/github.com/infiniteprimates/smoke
+1. Change directories into $GOPATH/src/github.com/infiniteprimates/smoke
+1. Install go dependencies using the dep tool. Run 'dep ensure'.
+1. Build the smoke binary. Run 'go build'.
 
 To build the Angular UI:
 
-0. Change directories into $GOPATH/src/github.com/infiniteprimates/smoke/ui-src
-0. Install javascript dependencies. Run 'npm install'.
-0. Build the Angular UI. Run 'ng build'. The built UI is located in $GOPATH/src/github.com/infiniteprimates/smoke/ui.
+1. Change directories into $GOPATH/src/github.com/infiniteprimates/smoke/ui-src
+1. Install javascript dependencies. Run 'npm install'.
+1. Build the Angular UI. Run 'ng build'. The built UI is located in $GOPATH/src/github.com/infiniteprimates/smoke/ui.
